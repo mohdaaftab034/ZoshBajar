@@ -26,6 +26,7 @@ services:
       - backend
     environment:
       PORT: 8080
+      BACKEND_URL: http://backend:5000
     ports:
       - "8080:8080"
     networks:

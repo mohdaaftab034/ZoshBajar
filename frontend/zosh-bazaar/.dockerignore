@@ -1,8 +1,13 @@
 node_modules
 dist
 npm-debug.log
+.npm
+.cache
+.DS_Store
 .env
+.env.*
+.vscode
+.idea
 .git
 .gitignore
-Dockerfile
 README.md

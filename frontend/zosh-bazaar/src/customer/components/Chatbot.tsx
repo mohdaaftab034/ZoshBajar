@@ -45,7 +45,7 @@ const Chatbot = ({ onClose }: ChatbotProps) => {
     if (!input.trim()) return;
 
     const userMessage = input.trim();
-    const userMsg = { sender: "user", text: input };
+    const userMsg: ChatMessage = { sender: "user", text: input };
     setMessages((prev) => [...prev, userMsg]);
     setInput("");
     setLoading(true);

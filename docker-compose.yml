@@ -26,7 +26,7 @@ services:
       - backend
     environment:
       PORT: 8080
-      BACKEND_URL: http://backend:5000
+      BACKEND_URL: https://zoshbajar-production.up.railway.app
     ports:
       - "8080:8080"
     networks:

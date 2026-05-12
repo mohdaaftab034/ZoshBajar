@@ -6,7 +6,8 @@ server {
     index index.html;
 
     location /api/ {
-        proxy_pass ${BACKEND_URL}/;
+        set $backend_url "${BACKEND_URL}";
+        proxy_pass $backend_url/;
         proxy_http_version 1.1;
         proxy_set_header Host $host;
         proxy_set_header X-Real-IP $remote_addr;
